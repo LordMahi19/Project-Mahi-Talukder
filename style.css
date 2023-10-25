@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3eb489, #800080);
+    font-family: 'Roboto', sans-serif;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {background: linear-gradient(45deg, #3eb489, #800080);}
+    50% {background: linear-gradient(45deg, #800080, #3eb489);}
+    100% {background: linear-gradient(45deg, #3eb489, #800080);}
+}
+
+#playerName, #startButton {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#playerName {
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#playerName:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#startButton {
+    border: none;
+    color: white;
+    background-color: #007BFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#startButton:hover {
+    background-color: #0056b3;
+}
+
+#instructionsContainer {
+    position: absolute;
+    top: 25%; /* Adjust this value to move the text up or down */
+    width: 100%;
+    text-align: center;
+}
+
+#gameInstructions {
+    color: #ffffff; /* Change this to the color you want for the text */
+    font-size: 24px; /* Change this to adjust the size of the text */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
